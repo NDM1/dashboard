@@ -1,0 +1,401 @@
+2025-07-04 21:46:31 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#6 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#8 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#16 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#17 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#19 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#4 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#6 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#14 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#15 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#17 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1045
+    [2] => Access denied for user 'root'@'localhost' (using password: NO)
+)
+
+2025-07-04 21:46:31 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ACSetupSvcPort' => '23210'
+    'ACSvcPort' => '17532'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\nasau\\AppData\\Roaming'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'ChocolateyLastPathUpdate' => '133281963595877452'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'NASAUDEAN'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'EnableLog' => 'INFO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\nasau'
+    'LOCALAPPDATA' => 'C:\\Users\\nasau\\AppData\\Local'
+    'LOGONSERVER' => '\\\\NASAUDEAN'
+    'NUMBER_OF_PROCESSORS' => '16'
+    'OneDrive' => 'C:\\Users\\nasau\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python311\\Scripts\\;C:\\Python311\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.3.33;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\nasau\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;;C:\\Users\\nasau\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Users\\nasau\\.dotnet\\tools;C:\\Users\\nasau\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '25'
+    'PROCESSOR_REVISION' => '2100'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\nasau\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'RlsSvcPort' => '22112'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'NASAUDEAN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NASAUDEAN'
+    'USERNAME' => 'nasau'
+    'USERPROFILE' => 'C:\\Users\\nasau'
+    'windir' => 'C:\\WINDOWS'
+    'WSLENV' => 'WT_SESSION:WT_PROFILE_ID:'
+    'WT_PROFILE_ID' => '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'
+    'WT_SESSION' => '0b4f81e6-e483-4cc2-a35d-8d4eac66b11d'
+    '__PSLockDownPolicy' => '0'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1751665591.4941
+    'REQUEST_TIME' => 1751665591
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2025-07-04 21:47:41 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#6 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#8 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#16 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#17 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#19 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#4 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#6 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#14 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#15 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#17 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1045
+    [2] => Access denied for user 'root'@'localhost' (using password: NO)
+)
+
+2025-07-04 21:47:41 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PSExecutionPolicyPreference' => 'Bypass'
+    'TERM_SESSION_ID' => '3db49d4e-8987-45e7-a67c-8e28e4fd4d68'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    'USERNAME' => 'nasau'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\nasau'
+    'PROCESSOR_REVISION' => '2100'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\WINDOWS\\system32'
+    'ACSvcPort' => '17532'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\wamp64\\bin\\php\\php7.3.33;C:\\Python311\\Scripts\\;C:\\Python311\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.3.33;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\nasau\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;;C:\\Users\\nasau\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Users\\nasau\\.dotnet\\tools;C:\\Users\\nasau\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NASAUDEAN'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    '__PSLockDownPolicy' => '0'
+    'HOMEPATH' => '\\Users\\nasau'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'EFC_10576_3789132940' => '1'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'EFC_10576_2283032206' => '1'
+    'LOCALAPPDATA' => 'C:\\Users\\nasau\\AppData\\Local'
+    'RlsSvcPort' => '22112'
+    'ACSetupSvcPort' => '23210'
+    'EFC_10576_2775293581' => '1'
+    'APPDATA' => 'C:\\Users\\nasau\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PSModulePath' => 'C:\\Users\\nasau\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'EFC_10576_1262719628' => '1'
+    'EnableLog' => 'INFO'
+    'JETBRAINS_INTELLIJ_COMMAND_END_MARKER' => '2H6WjGwEdBhgI19nIiPNaHqp8fga1dEOE35Q01nloe892Q6ZTLNNSMTfSAIHb6uq'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '16'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PROCESSOR_LEVEL' => '25'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NASAUDEAN'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\nasau\\OneDrive'
+    'USERDOMAIN' => 'NASAUDEAN'
+    'SystemDrive' => 'C:'
+    'EFC_10576_1592913036' => '1'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'NASAUDEAN'
+    'ChocolateyLastPathUpdate' => '133281963595877452'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1751665661.7543
+    'REQUEST_TIME' => 1751665661
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2025-07-04 21:48:53 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', 'Fizica12', NULL)
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#5 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#6 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#8 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#16 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#17 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#18 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#19 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo(true)
+#3 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(1181): yii\db\Command->prepare(true)
+#4 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(366): yii\db\Command->queryAll()
+#6 D:\Projects\dashboard\vendor\yiisoft\yii2\db\mysql\Schema.php(134): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\Projects\dashboard\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 D:\Projects\dashboard\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#14 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#15 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction('', Array)
+#16 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php(555): yii\console\Controller->runAction('', Array)
+#17 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2advanced'
+)
+
+2025-07-04 21:48:53 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PSExecutionPolicyPreference' => 'Bypass'
+    'TERM_SESSION_ID' => '3db49d4e-8987-45e7-a67c-8e28e4fd4d68'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    'USERNAME' => 'nasau'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\nasau'
+    'PROCESSOR_REVISION' => '2100'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\WINDOWS\\system32'
+    'ACSvcPort' => '17532'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\wamp64\\bin\\php\\php7.3.33;C:\\Python311\\Scripts\\;C:\\Python311\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.3.33;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\nasau\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;;C:\\Users\\nasau\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Users\\nasau\\.dotnet\\tools;C:\\Users\\nasau\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NASAUDEAN'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    '__PSLockDownPolicy' => '0'
+    'HOMEPATH' => '\\Users\\nasau'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'EFC_10576_3789132940' => '1'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'EFC_10576_2283032206' => '1'
+    'LOCALAPPDATA' => 'C:\\Users\\nasau\\AppData\\Local'
+    'RlsSvcPort' => '22112'
+    'ACSetupSvcPort' => '23210'
+    'EFC_10576_2775293581' => '1'
+    'APPDATA' => 'C:\\Users\\nasau\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PSModulePath' => 'C:\\Users\\nasau\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'EFC_10576_1262719628' => '1'
+    'EnableLog' => 'INFO'
+    'JETBRAINS_INTELLIJ_COMMAND_END_MARKER' => '2H6WjGwEdBhgI19nIiPNaHqp8fga1dEOE35Q01nloe892Q6ZTLNNSMTfSAIHb6uq'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '16'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PROCESSOR_LEVEL' => '25'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NASAUDEAN'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\nasau\\OneDrive'
+    'USERDOMAIN' => 'NASAUDEAN'
+    'SystemDrive' => 'C:'
+    'EFC_10576_1592913036' => '1'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'NASAUDEAN'
+    'ChocolateyLastPathUpdate' => '133281963595877452'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1751665733.8288
+    'REQUEST_TIME' => 1751665733
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
