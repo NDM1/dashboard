@@ -399,3 +399,280 @@ $_SERVER = [
     ]
     'argc' => 2
 ]
+2025-07-04 22:08:47 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "rbac/init". in D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('rbac/init', Array)
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "rbac/init". in D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#3 {main}
+2025-07-04 22:08:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PSExecutionPolicyPreference' => 'Bypass'
+    'TERM_SESSION_ID' => '18a4b52a-8f8f-4ac1-b32b-a095d0f4391e'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    'USERNAME' => 'nasau'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\nasau'
+    'PROCESSOR_REVISION' => '2100'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\WINDOWS\\system32'
+    'ACSvcPort' => '17532'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\wamp64\\bin\\php\\php7.3.33;C:\\Python311\\Scripts\\;C:\\Python311\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.3.33;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\nasau\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;;C:\\Users\\nasau\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Users\\nasau\\.dotnet\\tools;C:\\Users\\nasau\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NASAUDEAN'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    '__PSLockDownPolicy' => '0'
+    'HOMEPATH' => '\\Users\\nasau'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'EFC_10576_3789132940' => '1'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'EFC_10576_2283032206' => '1'
+    'LOCALAPPDATA' => 'C:\\Users\\nasau\\AppData\\Local'
+    'RlsSvcPort' => '22112'
+    'ACSetupSvcPort' => '23210'
+    'EFC_10576_2775293581' => '1'
+    'APPDATA' => 'C:\\Users\\nasau\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PSModulePath' => 'C:\\Users\\nasau\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'EFC_10576_1262719628' => '1'
+    'EnableLog' => 'INFO'
+    'JETBRAINS_INTELLIJ_COMMAND_END_MARKER' => 'rr0guCFhNJExAXUfmiDPKxxfkwgDHGeWtZPqzxw1Jy9WSzWQQarFawJuVj3Ky9gH'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '16'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PROCESSOR_LEVEL' => '25'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NASAUDEAN'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\nasau\\OneDrive'
+    'USERDOMAIN' => 'NASAUDEAN'
+    'SystemDrive' => 'C:'
+    'EFC_10576_1592913036' => '1'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'NASAUDEAN'
+    'ChocolateyLastPathUpdate' => '133281963595877452'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1751666927.9649
+    'REQUEST_TIME' => 1751666927
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2025-07-04 22:08:55 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "rbac/init". in D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('rbac/init', Array)
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "rbac/init". in D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\Projects\dashboard\yii(23): yii\base\Application->run()
+#3 {main}
+2025-07-04 22:08:55 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PSExecutionPolicyPreference' => 'Bypass'
+    'TERM_SESSION_ID' => '18a4b52a-8f8f-4ac1-b32b-a095d0f4391e'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    'USERNAME' => 'nasau'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\nasau'
+    'PROCESSOR_REVISION' => '2100'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\WINDOWS\\system32'
+    'ACSvcPort' => '17532'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\wamp64\\bin\\php\\php7.3.33;C:\\Python311\\Scripts\\;C:\\Python311\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.3.33;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\nasau\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;;C:\\Users\\nasau\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Users\\nasau\\.dotnet\\tools;C:\\Users\\nasau\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NASAUDEAN'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    '__PSLockDownPolicy' => '0'
+    'HOMEPATH' => '\\Users\\nasau'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'EFC_10576_3789132940' => '1'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'EFC_10576_2283032206' => '1'
+    'LOCALAPPDATA' => 'C:\\Users\\nasau\\AppData\\Local'
+    'RlsSvcPort' => '22112'
+    'ACSetupSvcPort' => '23210'
+    'EFC_10576_2775293581' => '1'
+    'APPDATA' => 'C:\\Users\\nasau\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PSModulePath' => 'C:\\Users\\nasau\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'EFC_10576_1262719628' => '1'
+    'EnableLog' => 'INFO'
+    'JETBRAINS_INTELLIJ_COMMAND_END_MARKER' => 'rr0guCFhNJExAXUfmiDPKxxfkwgDHGeWtZPqzxw1Jy9WSzWQQarFawJuVj3Ky9gH'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '16'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PROCESSOR_LEVEL' => '25'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NASAUDEAN'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\nasau\\OneDrive'
+    'USERDOMAIN' => 'NASAUDEAN'
+    'SystemDrive' => 'C:'
+    'EFC_10576_1592913036' => '1'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'NASAUDEAN'
+    'ChocolateyLastPathUpdate' => '133281963595877452'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1751666935.6852
+    'REQUEST_TIME' => 1751666935
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
+2025-07-04 22:10:44 [-][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_put_contents(D:\Projects\dashboard/console/rbac/items.php): failed to open stream: No such file or directory in D:\Projects\dashboard\vendor\yiisoft\yii2\rbac\PhpManager.php:799
+Stack trace:
+#0 D:\Projects\dashboard\vendor\yiisoft\yii2\rbac\PhpManager.php(799): yii\console\ErrorHandler->handleError('2', ''file_put_conte...', ''D:\\\\Projects\\\\...', '799', '['data' => [], ...')
+#1 D:\Projects\dashboard\vendor\yiisoft\yii2\rbac\PhpManager.php(799): ::file_put_contents(''D:\\\\Projects\\\\...', ''<?php\\n\\nretur...', '2')
+#2 D:\Projects\dashboard\vendor\yiisoft\yii2\rbac\PhpManager.php(841): yii\rbac\PhpManager->saveToFile('[]', ''D:\\\\Projects\\\\...')
+#3 D:\Projects\dashboard\vendor\yiisoft\yii2\rbac\PhpManager.php(769): yii\rbac\PhpManager->saveItems()
+#4 D:\Projects\dashboard\vendor\yiisoft\yii2\rbac\PhpManager.php(542): yii\rbac\PhpManager->save()
+#5 D:\Projects\dashboard\console\controllers\RbacController.php(14): yii\rbac\PhpManager->removeAll()
+#6 D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php(60): console\controllers\RbacController->actionInit()
+#7 D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php(60): ::call_user_func_array:{D:\Projects\dashboard\vendor\yiisoft\yii2\base\InlineAction.php:60}('[0 => class con...', '[]')
+#8 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams('[]')
+#9 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Controller.php(180): console\controllers\RbacController->runAction(''init'', '[]')
+#10 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Module.php(555): console\controllers\RbacController->runAction(''init'', '[]')
+#11 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(180): yii\console\Application->runAction(''rbac/init'', '[]')
+#12 D:\Projects\dashboard\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction(''rbac/init'', '[]')
+#13 D:\Projects\dashboard\vendor\yiisoft\yii2\base\Application.php(387): yii\console\Application->handleRequest('class yii\\conso...')
+#14 D:\Projects\dashboard\yii(23): yii\console\Application->run()
+#15 {main}
+2025-07-04 22:10:44 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'PSExecutionPolicyPreference' => 'Bypass'
+    'TERM_SESSION_ID' => '18a4b52a-8f8f-4ac1-b32b-a095d0f4391e'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ProgramW6432' => 'C:\\Program Files'
+    'USERNAME' => 'nasau'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'USERPROFILE' => 'C:\\Users\\nasau'
+    'PROCESSOR_REVISION' => '2100'
+    'IDEA_INITIAL_DIRECTORY' => 'C:\\WINDOWS\\system32'
+    'ACSvcPort' => '17532'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'Path' => 'C:\\wamp64\\bin\\php\\php7.3.33;C:\\Python311\\Scripts\\;C:\\Python311\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php7.3.33;C:\\composer;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\nasau\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;;C:\\Users\\nasau\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files\\Git\\bin;C:\\Users\\nasau\\AppData\\Roaming\\npm;C:\\Users\\nasau\\.dotnet\\tools;C:\\Users\\nasau\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'SESSIONNAME' => 'Console'
+    'LOGONSERVER' => '\\\\NASAUDEAN'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    '__PSLockDownPolicy' => '0'
+    'HOMEPATH' => '\\Users\\nasau'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'EFC_10576_3789132940' => '1'
+    'ChocolateyInstall' => 'C:\\ProgramData\\chocolatey'
+    'EFC_10576_2283032206' => '1'
+    'LOCALAPPDATA' => 'C:\\Users\\nasau\\AppData\\Local'
+    'RlsSvcPort' => '22112'
+    'ACSetupSvcPort' => '23210'
+    'EFC_10576_2775293581' => '1'
+    'APPDATA' => 'C:\\Users\\nasau\\AppData\\Roaming'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL'
+    'PSModulePath' => 'C:\\Users\\nasau\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'EFC_10576_1262719628' => '1'
+    'EnableLog' => 'INFO'
+    'JETBRAINS_INTELLIJ_COMMAND_END_MARKER' => 'rr0guCFhNJExAXUfmiDPKxxfkwgDHGeWtZPqzxw1Jy9WSzWQQarFawJuVj3Ky9gH'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'NUMBER_OF_PROCESSORS' => '16'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2023.1.5\\bin;'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PROCESSOR_LEVEL' => '25'
+    'windir' => 'C:\\WINDOWS'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NASAUDEAN'
+    'ProgramFiles' => 'C:\\Program Files'
+    'TEMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\nasau\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'OneDrive' => 'C:\\Users\\nasau\\OneDrive'
+    'USERDOMAIN' => 'NASAUDEAN'
+    'SystemDrive' => 'C:'
+    'EFC_10576_1592913036' => '1'
+    'ProgramData' => 'C:\\ProgramData'
+    'COMPUTERNAME' => 'NASAUDEAN'
+    'ChocolateyLastPathUpdate' => '133281963595877452'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1751667044.2482
+    'REQUEST_TIME' => 1751667044
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
